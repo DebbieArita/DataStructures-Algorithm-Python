@@ -4,7 +4,7 @@ maxSum = 7+12+14 = 33
 
 
 """
-#Solution1
+#Solution1 - 0(n) time / 0(n) space
 def max_subset_sum_no_adjacent(arr):
     if not len(arr):
         return 0
@@ -16,7 +16,7 @@ def max_subset_sum_no_adjacent(arr):
         maxSum[i] = max(maxSum[i-1], maxSum[i-2] + arr[i])
     return maxSum[-1]
 
-#Solution2
+#Solution2 - 0(n) time / 0(1) space
 def max_subset_sum_no_adjacent(arr):
     if not len(arr):
         return
@@ -30,7 +30,7 @@ def max_subset_sum_no_adjacent(arr):
         first = current
     return first
 
-#Solution3
+#Solution3 - 0(n) time / 0(1) space
 def max_subset_sum_no_adjacent(array):
     if not array:
         return 0
